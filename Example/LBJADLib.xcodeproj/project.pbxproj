@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AD59B81EFA7F6E473A8782F /* LBJADLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LBJADLib.podspec; path = ../LBJADLib.podspec; sourceTree = "<group>"; };
+		0AD59B81EFA7F6E473A8782F /* LBJADLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LBJADLib.podspec; path = ../LBJADLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		40341D4320D47CD6DA662F47 /* Pods_LBJADLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBJADLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB3EFAFC75DB4E6906B5447 /* Pods-LBJADLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBJADLib_Tests.release.xcconfig"; path = "Target Support Files/Pods-LBJADLib_Tests/Pods-LBJADLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		50741A2EE56BE31D3CCB1883 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		50741A2EE56BE31D3CCB1883 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		594A89E2A4BD813168571B53 /* Pods-LBJADLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBJADLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-LBJADLib_Example/Pods-LBJADLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LBJADLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBJADLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		CB9B7E50FBBC6403C2AD484F /* Pods-LBJADLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBJADLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LBJADLib_Tests/Pods-LBJADLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E46E977112E67F7672D4CA23 /* Pods_LBJADLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBJADLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E76B7CD9F05135A90A1B3EA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E76B7CD9F05135A90A1B3EA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FF37DBBC3C8DE1326CF47F2B /* Pods-LBJADLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBJADLib_Example.release.xcconfig"; path = "Target Support Files/Pods-LBJADLib_Example/Pods-LBJADLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 				CB9B7E50FBBC6403C2AD484F /* Pods-LBJADLib_Tests.debug.xcconfig */,
 				4EB3EFAFC75DB4E6906B5447 /* Pods-LBJADLib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +171,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				70D683F71093987E2EEC652F /* [CP] Embed Pods Frameworks */,
+				138B93A77CE8D5156A5944B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,6 +263,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		138B93A77CE8D5156A5944B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LBJADLib_Example/Pods-LBJADLib_Example-resources.sh",
+				"${PODS_ROOT}/Ads-CN/PangleSDK/LICENSE",
+				"${PODS_ROOT}/Ads-CN/PangleSDK/BUAdSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LBJADLib_Example/Pods-LBJADLib_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2EDBFA48EF3054E0ABAA1EA4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,11 +334,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LBJADLib_Example/Pods-LBJADLib_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LBJADLib/LBJADLib.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBJADLib.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
