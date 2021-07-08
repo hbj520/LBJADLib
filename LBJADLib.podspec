@@ -42,5 +42,6 @@ Pod::Spec.new do |s|
    s.dependency  'ReactiveObjC'
    s.swift_versions = '5.0'
    s.static_framework = true
+   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
    
 end
